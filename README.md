@@ -104,21 +104,21 @@ Then I collected more data at that specific curve. At the end of the process, th
 The final model architecture (model.py lines 18-24) consisted of a convolution neural network as described previously. Here is a visualization of the architecture:
 
 
-![](imgs_videos\image1.JPG)
+![](imgs_videos/image1.JPG)
 
 #### 3. Creation of the Training Set & Training Process
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
-![](imgs_videos\center_camera.JPG)
+![](imgs_videos/center_camera.JPG)
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to steer back to center when it starts to leading toward side. These images show what a recovery looks like starting from side:
 
 
 
-![center_camera](imgs_videos\center_camera.JPG)
-![left camera](imgs_videos\left_camera.JPG)
-![right camera](imgs_videos\right_camera.JPG)
+![center_camera](imgs_videos/center_camera.JPG)
+![left camera](imgs_videos/left_camera.JPG)
+![right camera](imgs_videos/right_camera.JPG)
 
 
 
@@ -133,6 +133,6 @@ I finally randomly shuffled the data set and put 20% of the data into a validati
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 5 as evidenced by
 
-![loss vs epoch](imgs_videos\loss.png)
+![loss vs epoch](imgs_videos/loss.png)
 
 I used an adam optimizer so that manually training the learning rate wasn't necessary.
